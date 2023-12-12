@@ -60,12 +60,99 @@
  			background-color: rgb(13, 8, 87);
 		}
     
+     /*Website column widths when in desktop format
+
+    Code adapted from: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_cols
+    Author: w3schools.com
+    Name: Tryit: Build a responsive grid view
+    Description: Code to format a reactive grid layout
+    Date retrieved: Tuesday, 12th December 2023*/ 
+    
+    /*Column div elements styling and rules*/   
+    [class*="col-"] {
+  float: left;
+  padding: 20px;
+  margin: 0;
+  background-color: black;
+	color: white;
+  max-height: 500px;
+  min-height: 500px;
+	font-family: Verdana, sans-serif;
+  font-size: 15px;
+	overflow: scroll;
+}
+    
+  /*Header element styling and rules*/
+  .header {
+  padding: 15px;
+  margin-top: 50px;
+	font-family: Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+    
+    
+    @media only screen and (min-width: 605px) and (max-width:1500px){
+
+      
+      
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+      
+    }
+    
+    
+      
+ @media only screen and (max-width: 604px){
+     /*Website column widths/margins when in mobile format*/  
+.col-1 {width: 100%;
+       margin-top: 35px;}
+.col-2 {width: 100%;
+  		margin-top: 35px;}
+.col-3 {width: 100%;
+       margin-top: 35px;}
+.col-4 {width: 100%;
+      	margin-top: 35px;}
+.col-5 {width: 100%;
+      margin-top: 35px;}
+.col-6 {width: 100%;
+      margin-top: 35px;}
+.col-7 {width: 100%;
+      margin-top: 35px;}
+.col-8 {width: 100%;
+      margin-top: 35px;}
+.col-9 {width: 100%;
+      margin-top: 35px;}
+.col-10 {width: 100%;
+      margin-top: 35px;}
+.col-11 {width: 100%;
+      margin-top: 35px;}
+.col-12 {width: 100%;
+      margin-top: 35px;}
+      
+    }
     
     </style>
     
   </head>
   
   <body>
+    
+     <div class="row" id="Welcome"> 
+       
+       
+       
+    </div>
     
          <!-- Nav bar titles and links to webpage sections-->
     <ul>
